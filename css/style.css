@@ -162,6 +162,16 @@ header nav .login-menu .info-button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.slogan-title {
+  padding-bottom: 5px;
+  font-weight: normal;
+}
+
+.slogan-description {
+  color: #808080;
 }
 /* ----/main */
 
