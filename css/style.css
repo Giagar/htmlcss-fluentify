@@ -149,6 +149,21 @@ header nav .login-menu .info-button {
 }
 /* ----/header */
 
+/* ----main */
+.slogan-container {
+  text-align: center;
+  height: 100px;
+  background: #D3D3D3;
+  position: relative;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ----/main */
 
 
 
