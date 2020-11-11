@@ -1,0 +1,124 @@
+/* ----COMMON RULES & UTILITY CLASSES */
+html {
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ----/COMMON RULES & UTILITY CLASSES */
+
+/* ----STYLE */
+/* ----header */
+header {
+  background: #0C325A;
+  height: 500px;
+}
+
+.header-content-container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  height: 100%;
+}
+
+header nav {
+  height: 50px;
+}
+
+header nav .logo-container {
+  width: 10%;
+  height: 100%;
+  border: 1px solid grey;
+}
+
+header nav .main-menu {
+  width: 50%;
+  height: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li:hover {
+  background: lightblue;
+}
+
+.login-menu ul li:nth-last-child(1), .login-menu ul li:nth-last-child(2):hover {
+  background: inherit;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav .list-link-title {
+  height: 100%;
+  line-height: 50px;
+  padding: 0 8px;
+  font-size: 10px;
+  color: white;
+}
+
+header nav .login-menu {
+  width: 40%;
+  height: 100%;
+}
+
+header nav button {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  color: white;
+}
+
+header nav li button:hover {
+  cursor: pointer;
+}
+
+header nav .login-menu .login-button {
+  padding: 6px 14px;
+  border: 1px solid white;
+  background: none;
+}
+
+header nav .login-menu .info-button {
+  padding: 6px 8px;
+  border: none;
+  background: #7CBB01;
+}
+/* ----/header */
+
+
+
+
+
+/* ----/STYLE */
