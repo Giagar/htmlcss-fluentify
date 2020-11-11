@@ -7,6 +7,7 @@ html {
   --text-color-grey: #808080;
   --background-grey: #D3D3D3;
   --wrapper-paddingX: 10%;
+  --item-container-padding: 30px;
 }
 
 * {
@@ -82,8 +83,8 @@ header nav ul li {
   display: inline-block;
 }
 
-header nav ul li:hover {
-  background: lightblue;
+header nav ul li a:hover {
+  text-decoration: underline;
 }
 
 .login-menu ul li:nth-last-child(1), .login-menu ul li:nth-last-child(2):hover {
@@ -95,9 +96,9 @@ header nav a {
 }
 
 header nav .list-link-title {
-  height: 100%;
   line-height: var(--nav-height);
   padding: 0 8px;
+  /* padding: 10px 8px; */
   font-size: 10px;
   color: white;
 }
@@ -134,7 +135,7 @@ header nav .login-menu .info-button {
 .header-title-container {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
 }
 
 .header-title-container h1 {
@@ -150,6 +151,7 @@ header nav .login-menu .info-button {
   padding: 16px;
   border-radius: var(--button-radius);
   margin-top: 22px;
+  position: absolute; /* per centrare h1 e legare poi button ad h1 togliendolo dal flusso */
 }
 /* ----/header */
 
@@ -179,15 +181,18 @@ header nav .login-menu .info-button {
   color: var(--text-color-grey);
 }
 
+.row {
+  padding: 0 var(--wrapper-paddingX);
+}
+
 .row1{
-  padding: 15px var(--wrapper-paddingX);
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--background-grey);
 }
 
 .row1 .item-container {
   width: calc(100%/3);
   text-align: center;
-  padding: 15px;
+  padding: var(--item-container-padding);
 }
 
 .row1 .item-container .img-container {
@@ -214,11 +219,32 @@ header nav .login-menu .info-button {
 
 .row1 .item-container p {
   color: var(--text-color-grey);
-  padding: 15px 0;
+  padding: 15px 0 0;
+}
+
+.row2 .item-container {
+  width: 50%;
+  height: 420px;
+  padding: var(--item-container-padding);
+}
+
+.row2 .item-container p {
+  color: var(--text-color-grey);
+  padding: 10px 0 15px;
+}
+
+.row2 .item-container a {
+  color: #6E97C6;
+  padding: 10px 0 15px;
 }
 /* ----/main */
 
-
+/* ----footer */
+footer {
+  height: 100px;
+  background: var(--background-grey);
+}
+/* ----/footer */
 
 
 /* ----/STYLE */
